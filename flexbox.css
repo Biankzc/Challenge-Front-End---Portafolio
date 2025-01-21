@@ -1,0 +1,278 @@
+  /* Barra de navegación fija */
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+
+  }
+
+  .presentacion{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  /*-----------------------------Skills---------------------------*/
+  .skills-row{
+   display: flex;
+   flex-direction:row;
+   justify-content: space-between;
+   gap:1rem;
+   padding-left: 1rem;
+   padding-right: 1rem;
+   /*justify-items: flex-start;*/
+   width: 100%;
+   
+
+  }
+.icon{
+    display:flex ;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+  .text-subtitulo{
+    padding-bottom: 3rem;
+    text-align: center;
+  }
+
+/*-------------------------------Hobbies------------------------------*/
+.hobbies-row{
+   display: flex;
+   flex-direction:row;
+   justify-content: space-between;
+   gap:1rem;
+   padding-left: 1rem;
+   padding-right: 1rem;
+   /*justify-items: flex-start;*/
+   width: 100%;
+   flex-wrap: wrap; 
+
+}
+
+.icon_hobbies{
+    display:flex ;
+    flex-direction: column;
+    align-items: center;
+}
+.texto-p-centrar{
+    text-align: center;
+}
+/*-----------------------Educacion------------------*/
+.formacion-row{
+    display: flex;
+    flex-direction:row;
+    justify-content: space-between;
+    align-self: baseline;
+
+   /*justify-items: flex-start;*/
+    width: 100%;
+    flex-wrap: wrap;
+  
+
+}
+
+ /*--------------------contacto-----------------------*/
+ .contacto{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 2rem;
+
+ }
+
+ .contact-image{
+    width: 100%;
+    height: auto;
+ }
+
+ .contact-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    height: auto;
+ }
+
+ /*---------formulario---------------*/
+
+ form {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.titulo-agregar{
+    padding-bottom: 2rem;
+}
+
+form label {
+    font-size: 16px;
+    margin-top: 10px;
+    display: block;
+}
+
+form input[type="text"],
+form input[type="email"] {
+    width: 100%;
+    padding: 8px;
+    margin: 8px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+#message {
+    width: 100%; /* Ancho del área de texto */
+    height: 150px; /* Alto del área de texto */
+    resize: none; /* Evita que el usuario cambie el tamaño del área de texto */
+    overflow: auto; /* Muestra el scroll si el contenido excede el área */
+    border: 1px solid #ccc; /* Opcional: estilo del borde */
+    padding: 10px; /* Opcional: espacio interior */
+    font-size: 14px; /* Opcional: tamaño de fuente */
+    border-radius: 5px; /* Opcional: esquinas redondeadas */
+   
+  }
+
+.boton-enviar{
+    margin-top: 3rem;
+    display: flex;
+    gap: 4rem;
+    
+}
+form input[type="submit"] {
+    width: 14rem;
+    background-color: #c04f9a;
+    color: rgb(255, 255, 255);
+    padding: 10px 20px;
+    border-radius: 30px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+form input[type="submit"]:hover {
+    background-color: #000002;
+    color: #ffffff;
+}
+
+
+
+/*--------------------Responsive------------------*/
+/* Estilos generales para todos los tamaños */
+/*body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+form {
+    width: 100%;
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+textarea {
+    height: 100px;
+    resize: none;
+}
+
+.boton-enviar input[type="submit"] {
+    background-color: #007BFF;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    text-align: center;
+}
+
+.boton-enviar input[type="submit"]:hover {
+    background-color: #0056b3;
+}*/
+
+/* Responsivo para tablet (768px o menos) */
+@media screen and (max-width: 768px) {
+    .presentacion{
+        flex-wrap: wrap;
+
+      }
+
+    img {
+        width: 80%; /* Reduce el tamaño en pantallas pequeñas */
+        height: auto;
+    }
+
+
+    form {
+        width: 90%;
+        padding: 15px;
+    }
+    .contacto{
+        flex-wrap: wrap;
+
+    }
+
+    input, textarea {
+        font-size: 14px;
+        padding: 8px;
+    }
+
+    .boton-enviar input[type="submit"] {
+        font-size: 14px;
+        padding: 8px 15px;
+    }
+}
+
+/* Responsivo para móvil (360px o menos) */
+@media screen and (max-width: 360px) {
+    .skills-row{
+        flex-wrap: wrap;
+    }
+    .hobbies-row{
+        flex-wrap: wrap;
+    }   
+    img {
+        width: 100%; /* Imagen ocupa todo el ancho del contenedor */
+        height: auto;
+    } 
+    form {
+        width: 100%;
+        padding: 10px;
+    }
+
+    input, textarea {
+        font-size: 12px;
+        padding: 6px;
+    }
+
+    .boton-enviar input[type="submit"] {
+        font-size: 12px;
+        padding: 6px 10px;
+    }
+
+    label {
+        font-size: 14px;
+    }
+}

@@ -1,0 +1,133 @@
+/* General */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+body {
+    margin: 0;
+    font-family:'Raleway', sans-serif;
+    background-color: #eeeeee;
+
+  }
+  /* generales*/
+p{
+    padding-top: 1rem;
+    font-size: 16px ;
+    font-weight: normal;
+    color: #464646;
+  
+}
+
+h1{
+    font-size: 30px ;
+    font-weight:bold;
+    color: #3b212f;
+
+}
+
+h2{
+    font-size: 22px ;
+    font-weight:bold;
+    color: #996094;
+
+}
+
+
+  /* Barra de navegación fija */
+  .navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #d8557c;
+    color: #fff;
+    padding: 10px 0;
+    box-shadow: 0 4px 8px rgba(106, 45, 124, 0.2);
+    z-index: 1000;
+  }
+  
+  .navbar ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .navbar li {
+    margin: 0 15px;
+  }
+  
+  .navbar a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+  }
+  
+  .navbar a:hover {
+    color: #ffa500;
+  }
+  
+  /* Contenedor principal */
+  .page-container {
+    width:100%; /* Ajusta el ancho del contenedor */
+    max-width: 1440px; /* Ancho máximo */
+    margin: 80px auto 0; /* Centrado horizontal con espacio desde la barra de navegación */
+    padding: 20px;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    background-color: #fff;
+    box-shadow: 0 4px 10px rgba(139, 65, 189, 0.1);
+    border-radius: 8px;
+    overflow: hidden; /* Evita desbordamientos */
+  }
+  
+  /* Contenido dentro del contenedor */
+  .content {
+    display: flex;
+    flex-direction: column; /* Coloca las secciones una debajo de otra */
+    gap: 20px; /* Espacio entre las secciones */
+  }
+  
+  /* Secciones */
+  section {
+    padding-top: 2rem;
+    padding-bottom: 3rem;
+   /* background-color: #e3e3e3;*/
+    /*border: 1px solid #ccc;*/
+   /* padding: 15px;*/
+   /* text-align: center;*/
+    /*border-radius: 5px;*/
+    /*box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);*/
+  }
+  
+
+   /*formulario*/
+   .contact-container{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+   }
+
+  /* Footer */
+  .footer {
+    background-color: #161616;
+    color: #ffffff;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    font-size: 30px ;
+    font-weight: bold;
+    font-family:'Raleway', sans-serif;
+    margin-top: auto;
+  }
+  
+ 
